@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/**
+ * @author: zhanghuan
+ * @create: 2017/9/20
+ * @describe: 成果展示入口
+ */
+@import "../common";
+.show{
+  overflow-x: hidden;
+  background-color: #fff;
+
+  @import "../header";
+
+  .down-menu-model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+
+    .down-menu{
+      @include px2rem(padding-top, 88px);
+      @include px2rem(padding-left, 24px);
+      @include px2rem(padding-right, 24px);
+      background-color: #fff;
+
+      li{
+        display: flex;
+        align-items: center;
+        @include px2rem(height, 80px);
+
+        span{
+          font-size: px2em(28px);
+        }
+        span:nth-child(1){
+          padding-right: 10px;
+        }
+
+        &.current{
+          span{
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+
+  .banner{
+    width: 100%;
+    @include px2rem(height, 450px);
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .list-title{
+    @include px2rem(height, 78px);
+    @include px2rem(line-height, 78px);
+    @include px2rem(padding-left, 24px);
+    @include px2rem(padding-right, 24px);
+    text-align: center;
+    color: $mainColor;
+    font-size: px2em(28px);
+    font-weight: 900;
+  }
+
+  .list{
+    display: flex;
+    justify-content: space-between;
+    @include px2rem(padding-left, 24px);
+    @include px2rem(padding-right, 24px);
+    @include px2rem(padding-top, 12px);
+    @include px2rem(padding-bottom, 12px);
+    border-top: 1px solid $grayThree;
+
+    .user-info{
+      flex: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .user-img{
+        @include px2rem(width, 90px);
+        @include px2rem(height, 90px);
+        border-radius: 50%;
+        overflow: hidden;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .user-detail{
+        flex: 2;
+        @include px2rem(padding-left, 20px);
+
+        h3{
+          font-size: px2em(26px);
+          color: $grayBlack;
+        }
+
+        p{
+          color: $grayTwo;
+        }
+      }
+    }
+
+    .choose-btn{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      @include px2rem(min-width, 80px);
+      font-size: px2em(26px);
+      color: $grayBlack;
+
+      div{
+        @include px2rem(width, 32px);
+        @include px2rem(height, 32px);
+
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+}

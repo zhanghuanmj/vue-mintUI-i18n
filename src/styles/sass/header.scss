@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/**
+ * @author: zhanghuan
+ * @create: 2017/9/15
+ * @describe: 头部
+ */
+
+.header {
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  @include px2rem(height, 88px);
+  @include px2rem(padding-left, 24px);
+  @include px2rem(padding-right, 24px);
+  background: #fff;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $grayThree;
+
+  h2 {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: px2em(36px);
+
+    .direction{
+      display: inline-block;
+      width: 0;
+      height: 0;
+      padding: 0;
+      border: 7px solid $mainColor;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      margin-bottom: px2em(4px);
+      margin-left: px2em(14px);
+
+      &.close{
+        border-top-color: transparent;
+      }
+
+      &.open{
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    -webkit-box-flex: .5;
+    -ms-flex: .5;
+    flex: .5;
+    background: none;
+
+    .header-icon {
+      display: inline-block;
+      @include px2rem(width, 42px);
+      @include px2rem(height, 42px);
+
+      img{
+        height: 100%;
+      }
+    }
+
+  }
+
+  .left-btn {
+    text-align: left;
+  }
+
+  .right-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+
+    .icon-one{
+      @include px2rem(width, 57px);
+      @include px2rem(padding-right, 15px);
+    }
+
+    .icon-two{
+      @include px2rem(width, 57px);
+      @include px2rem(padding-left, 15px);
+    }
+  }
+}

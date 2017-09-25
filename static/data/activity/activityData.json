@@ -1,0 +1,68 @@
+{
+  "data": {
+    "id": 307,
+    "title": "SHOUFOU",
+    "description": "DD",
+    "beginTime": "2017-09-07 00:00:00",
+    "endTime": "2017-09-16 00:00:00",
+    "isLogin": 0,
+    "eachVoteMin": 1,
+    "eachVoteMax": 5,
+    "state": 0,
+    "viewCount": 142,
+    "voteObjects": [
+      {
+        "id": 490,
+        "voteInfoId": 307,
+        "title": "小宝贝",
+        "describeSort": "哈哈",
+        "describeSortShow": "哈哈",
+        "describeMore": "",
+        "headPhotos": [],
+        "videos": [],
+        "sort": 25,
+        "photos": [],
+        "createTime": "2017-09-08 18:08:40",
+        "extend4": 0,
+        "extend5": 0.0
+      },
+      {
+        "id": 491,
+        "voteInfoId": 307,
+        "title": "小王宇",
+        "describeSort": "测试",
+        "describeSortShow": "测试",
+        "describeMore": "",
+        "headPhotos": [],
+        "videos": [],
+        "sort": 42,
+        "photos": [],
+        "createTime": "2017-09-08 18:08:40",
+        "extend4": 0,
+        "extend5": 0.0
+      }
+    ],
+    "rules": [
+      "投票时间：2017年09月07日至2017年09月16日",
+      "投票范围：2名 \"齐鲁工匠\"候选人。",
+      "投票方式：勾选人物点击投票按钮，输入弹出的验证码点击确定即可完成投票。每天每个IP地址投票次数不限制，每次投票至少选择1个候选人，最多选择5个候选人，少选多选无效。",
+      "严禁刷票：对已产生的刷票行为，主办方有权根据行为情节分别处于警告减票、中止投票、取消参与资格等处罚。",
+      "活动性质：本次投票活动属于公益活动，投票一律免费。",
+      "<font color = \"red\" >谨防诈骗：在关注投票的同时，请谨防以拉票、助选名义打来的诈骗电话，或其它形式与投票相关的干扰信息。</font>"
+    ],
+    "isApplyPeriod": "0",
+    "applyPeriodId": 144,
+    "applyPeriodName": "2017年校园齐鲁工匠评选大赛",
+    "createUserName": "admin",
+    "createIP": "192.168.105.46",
+    "createTime": "2017-09-08 18:08:40",
+    "modifyUserName": "admin",
+    "modifyIP": "192.168.102.31",
+    "modifyTime": "2017-09-22 12:06:26",
+    "extend1": "0",
+    "extend4": 0,
+    "extend5": 0.0
+  },
+  "code": "1",
+  "msg": ""
+}

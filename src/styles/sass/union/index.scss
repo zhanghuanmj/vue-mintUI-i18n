@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/**
+ * @author: zhanghuan
+ * @create: 2017/9/18
+ * @describe: 工会入口
+ */
+@import "../common";
+.union{
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+  @import "../header";
+
+  .cnt{
+    height: 100%;
+    @include px2rem(padding-top, 88px);
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    .link{
+      @include px2rem(padding-top, 20px);
+      @include px2rem(padding-bottom, 20px);
+      @include px2rem(padding-left, 24px);
+      @include px2rem(padding-right, 24px);
+
+      a{
+        display: block;
+        @include px2rem(height, 160px);
+        text-align: center;
+
+        img{
+          max-width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .nav{
+      @include px2rem(height, 158px);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @include px2rem(padding-left, 24px);
+      @include px2rem(padding-right, 24px);
+
+      dl{
+        text-align: center;
+      }
+
+      dt{
+        display: inline-block;
+        @include px2rem(width, 80px);
+        @include px2rem(height, 80px);
+
+        img{
+          height: 100%;
+        }
+      }
+
+      dd{
+        font-size: px2em(24px);
+        color: $grayOne;
+      }
+    }
+
+    .line{
+      @include px2rem(height, 24px);
+      background-color: $grayFour;
+      border: none;
+    }
+
+    .list-cnt{
+      @include px2rem(padding-left, 24px);
+      @include px2rem(padding-right, 24px);
+
+      .title-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include px2rem(height, 76px);
+        @include px2rem(padding-top, 18px);
+
+        span{
+          font-size: px2em(28px);
+        }
+
+        a{
+          font-size: px2em(24px);
+          color: $grayTwo;
+          @include px2rem(padding-left, 40px);
+        }
+      }
+
+      .list-ul{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        li{
+          @include px2rem(width, 340px);
+          @include px2rem(height, 370px);
+          display: flex;
+          align-items: center;
+          max-width: 45.33333%;
+        }
+
+        dl{
+          width: 100%;
+
+          dt{
+            width: 100%;
+            @include px2rem(height, 260px);
+
+            img{
+              max-width: 100%;
+              height: 100%;
+            }
+          }
+
+          dd{
+            overflow: hidden;
+
+            .list-title{
+              font-size: px2em(28px);
+            }
+            span{
+              color: $grayTwo;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
