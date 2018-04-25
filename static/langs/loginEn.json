@@ -1,0 +1,15 @@
+{
+  "title": "ACCOUNT LOGIN",
+  "quick": "Quick Login",
+  "email": "Email Login",
+  "mobile": "Mobile Login",
+  "emailHold": "Email",
+  "passwordHold": "Password",
+  "loginBtn": "Login",
+  "remember": "Remember password",
+  "forget": "Forget?",
+  "register": "I want to register one",
+  "fastPhoneHold": "Phone number",
+  "codeHold": "Verification code",
+  "getText": "Get"
+}

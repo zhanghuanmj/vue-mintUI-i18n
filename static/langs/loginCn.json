@@ -1,0 +1,15 @@
+{
+  "title": "帐户登录",
+  "quick": "快速登录",
+  "email": "邮箱登录",
+  "mobile": "手机登录",
+  "emailHold": "邮箱",
+  "passwordHold": "密码",
+  "loginBtn": "登录",
+  "remember": "记住密码",
+  "forget": "忘记密码？",
+  "register": "我要 注册",
+  "fastPhoneHold": "手机号",
+  "codeHold": "验证码",
+  "getText": "获取"
+}

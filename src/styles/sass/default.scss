@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/**
+* author: zhanghuan
+* created: 2018/4/25
+* describe: mint-ui的样式重写
+*/
+
+@import "./common.scss";
+/*****时间选择器******/
+
+.mint-datetime-picker {
+  .picker-toolbar {
+    @include px2rem(height, 80px);
+  }
+  .mint-datetime-action{
+    @include px2rem(line-height, 80px);
+    @include font-dpr(16px);
+  }
+}

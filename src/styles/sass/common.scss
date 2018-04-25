@@ -1,10 +1,7 @@
 /*var*/
-$mainColor: #b02423;
-$grayBlack: #363636;
-$grayOne: #696969;
-$grayTwo: #8c8c8c;
-$grayThree: #ccc;
-$grayFour: #f0f0f0;
+$mainColor: #00b48b;
+$secondColor: #f37739;
+$firstFontClr: #010101;
 
 /*var end*/
 
@@ -22,9 +19,6 @@ $grayFour: #f0f0f0;
 /*function end*/
 
 /*mixin start*/
-$blue: #3190e8;
-$bc: #e4e4e4;
-$fc: #fff;
 
 // 背景图片地址和大小
 @mixin bis($url) {
@@ -144,81 +138,3 @@ $fc: #fff;
 }
 
 /*mixin end*/
-
-/*style start*/
-.clear:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.clear {
-  zoom: 1;
-}
-
-.back_img {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.margin {
-  margin: 0 auto;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.paddingTop {
-  padding-top: 1.95rem;
-}
-
-@keyframes backOpacity {
-  0% {
-    opacity: 1
-  }
-  25% {
-    opacity: .5
-  }
-  50% {
-    opacity: 1
-  }
-  75% {
-    opacity: .5
-  }
-  100% {
-    opacity: 1
-  }
-}
-
-.animation_opactiy {
-  animation: backOpacity 2s ease-in-out infinite;
-}
-
-.icon{
-  display: inline-block;
-  @include px2rem(width, 50px);
-  @include px2rem(height, 50px);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-/*style end*/

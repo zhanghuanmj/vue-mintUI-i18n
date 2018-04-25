@@ -5,54 +5,24 @@
  */
 "use strict";
 var URL = {
-  union: {
-    techList: "front/clinic/list.do?&type=first"
+  search: {
+    submitCode: "submitCode.json"
   },
-
-  user: {
-    list: "front/applyResultDetail/get.do"
+  relative: {
+    type: "type.json",
+    more: "moreList.json"
   },
-
-  technical: {
-    list: "front/clinic/list.do",
-    techOne: "front/clinic/clinicinfo.do?hl=4",
-    comment: "front/clinicQuestionAction/list.do?hl=4&pageSize=10&page=1"
+  apply: {
+    applyData: "applyData.json"
   },
-
-  show: {
-    userList: "front/applyResult/getResultList.do"
+  content: {
+    content: "content.json"
   },
-
-  activity: {
-    menu: "front/voteInfo/voteInfoList.do",
-    userList: "front/applyResult/getResultList.do",
-    activityData: "front/voteInfo/get.do"
-  }
-};
-
-URL = {
-  union: {
-    techList: "union/techList.json"
+  basic: {
+    basic: "basic.json"
   },
-
-  user: {
-    list: "user/list.json"
-  },
-
-  technical: {
-    list: "technical/list.json",
-    techOne: "technical/techOne.json?a=2",
-    comment: "technical/comment.json?a=2"
-  },
-
-  show: {
-    userList: "show/userList.json"
-  },
-
-  activity: {
-    menu: "activity/menu.json",
-    userList: "activity/userList.json",
-    activityData: "activity/activityData.json"
+  more: {
+    more: "more.json"
   }
 };
 

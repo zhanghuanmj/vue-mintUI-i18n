@@ -1,3 +1,83 @@
+@charset "UTF-8";
+/**
+* author: zhanghuan
+* created: 2018/4/25
+* describe: 基础样式重置
+*/
+@import "./default.scss";
+
+$basePath: '/';
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-light.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-lightitalic.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-lightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-regular.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-regularitalic.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-regularitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-medium.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-mediumitalic.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-mediumitalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-semibold.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-semibolditalic.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-semibolditalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-bold.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "ibmPlexSans";
+  src: url($basePath + "static/fonts/ibmplexsans-bolditalic.woff2") format("woff2"), url($basePath + "static/fonts/ibmplexsans-bolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic
+}
+
 *{
   box-sizing: border-box;
 }
@@ -9,9 +89,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     line-height: 1.5em;
     text-decoration: none;
     border: none;
-    color: #363636;
     font-weight: normal;
-    font-family: "Microsoft Yahei";
     box-sizing: border-box;
     -webkit-tap-highlight-color:transparent;
     -webkit-font-smoothing: antialiased;
@@ -60,6 +138,81 @@ html,body{
     background-color: #F5F5F5;
 }
 
+/*style start*/
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.back_img {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* 省略号 */
+.etc{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.etc3{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;}
+
+@keyframes backOpacity {
+  0% {
+    opacity: 1
+  }
+  25% {
+    opacity: .5
+  }
+  50% {
+    opacity: 1
+  }
+  75% {
+    opacity: .5
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+.animation_opactiy {
+  animation: backOpacity 2s ease-in-out infinite;
+}
+.main-cnt{
+  @include px2rem(margin-left, 20px);
+  @include px2rem(margin-right, 20px);
+}
+.btn{
+  &:hover{
+    opacity: 0.8;
+  }
+  &:active{
+    opacity: 0.8;
+  }
+  cursor: pointer;
+}
+/*style end*/
 
 
 
